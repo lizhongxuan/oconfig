@@ -10,6 +10,10 @@ func Run(app *cli.Context) error {
 }
 
 func run(app *cli.Context) error {
-	logrus.Info("lzx good")
+	logrus.Info("run...")
+	args := ETCDConfig{}
+	ETCD(args)
+
+	logrus.Info("end...")
 	return nil
 }
